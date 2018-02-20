@@ -2,11 +2,20 @@ import React from 'react';
 import Aux from '../../../hoc/Aux';
 
 const orderSummary = (props) => {
+    // array polkich nazw
+    const nazwy = [
+        "Sałata",
+        "Bekon",
+        "Ser",
+        "Mięso"
+    ]
+    //zmienna to iteracji
+    let i = 0;
     const ingredientsSummary = Object.keys(props.ingredients)
         .map(igKey => {
             return (
                 <li key={igKey}>
-                    <span style={{textTransform: 'capitalize'}}>{igKey}</span>: {props.ingredients[igKey]}
+                    <span style={{textTransform: 'capitalize'}}>{nazwy[0+i++]}</span>: {props.ingredients[igKey]}
                 </li>
             );
         });
