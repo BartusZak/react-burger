@@ -28,6 +28,8 @@ const orderSummary = (props) => {
                 {ingredientsSummary}
             </ul>
             <p>Kontynuować do podsumowania zamówienia?</p>
+            <button>ANULUJ</button>
+            <button>KONTYNUUJ</button>
         </Aux>
     );    
 };
